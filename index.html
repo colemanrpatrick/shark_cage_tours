@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <meta name="viewport" content="user-scalable = yes, width=320, initial-scale=1">
+    <title>shark cage tours</title>
+  </head>
+  <body>
+      <!-- ========= -->
+      <div id="masthead" class="masthead">
+        <div class="masthead-relative">
+          <nav class="nav-left">
+            <ul>
+              <li class="nav-left-li-left"><button type="button" class="menu-btn" name="button" id="menu-btn">
+                    <hr class="menu-btn-hr-1"/>
+                    <hr class="menu-btn-hr-2"/>
+                    <hr class="menu-btn-hr-3"/>
+                  </button>
+                  <nav id="main-nav" class="main-nav">
+                    <a href="#">gallery</a>
+                    <a href="#">tours</a>
+                    <a href="#">about us</a>
+                    <a href="#">contact</a>
+                  </nav>
+              </li>
+            </ul>
+          </nav>
+          <div class="logo" id="logo"><img src="images/logo.png"/></div>
+          <button type="button" name="button" id="phoneBtn" onclick="idToggle('phone','active')"><i class="material-icons">phone</i></button>
+          <div class="phone" id="phone">
+            <a href="#">1-888-582-8858</a>
+          </div>
+        </div>
+      </div>
+      <!-- ========= -->
+      <div class="top-content">
+        <div class="banner">
+          <img class="banner-shark" src="images/northshore/shark2.png" alt="">
+          <section>
+            <header>
+              <h1>header text goes here</h1>
+              <h2>second header goes here</h2>
+            </header>
+            <a href="#">book now</a>
+            <img class="shark-bg" src="images/sharkbg.png" alt="">
+          </section>
+        </div>
+        <nav class="product-nav">
+          <ul>
+            <li onclick="idToggle('product-1','active')"><h2>north shore<span class="p-span-1">shark adventures</span><span class="p-span-2">oahu, hawaii</span></h2></li>
+            <li onclick="idToggle('product-2','active')"><h2>hawaii shark<span class="p-span-1">encounters</span><span class="p-span-2">oahu, hawaii</span></h2></li>
+            <li><h2>white shark<span class="p-span-1">hawaii</span><span class="p-span-2">Mossel Bay, South Africa</span></h2></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- ========= -->
+        <!-- =##= -->
+        <div class="detail-wrapper" id="product-1">
+          <header>
+            <h2>north shore shark adventure</h2>
+            <nav>
+              <button type="button" onclick="idToggle('product-1','active')" name="button"><i class="material-icons">highlight_off</i></button>
+            </nav>
+          </header>
+          <section>
+            <div class="detail-img"><img src="images/northshore/9.png" alt=""></div>
+            <article>
+              <p><b>L</b>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p><b>L</b>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>consectetur adipisicing elit</li>
+                <li>labore et dolore magna aliqua</li>
+              </ul>
+              <a href="#">book now</a>
+            </article>
+          </section>
+        </div>
+        <!-- =##= -->
+        <div class="detail-wrapper" id="product-2">
+          <header>
+            <h2>hawaii shark encounters</h2>
+            <nav>
+              <button type="button" onclick="idToggle('product-2','active')" name="button"><i class="material-icons">highlight_off</i></button>
+            </nav>
+          </header>
+          <section>
+            <div class="detail-img">
+              <img src="images/encounters/2.png" alt="">
+            </div>
+            <article>
+              <p><b>L</b>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p><b>L</b>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>consectetur adipisicing elit</li>
+                <li>labore et dolore magna aliqua</li>
+              </ul>
+              <a href="#">book now</a>
+            </article>
+          </section>
+        </div>
+        <!-- =##= -->
+        <div class="article-section">
+          <section>
+            <div id="article-img" class="article-img">
+              <img class="slide" src="images/northshore/sharks2.png" alt="">
+              <img class="slide" src="images/encounters/1.png" alt="">
+              <img class="slide" src="images/africa/1.png" alt="">
+              <nav>
+                <button type="button" name="button" onclick="sliderPlus(-1)"> <i class="material-icons">arrow_back_ios</i> </button>
+                <button type="button" name="button" onclick="sliderCurrent(1)" class="img-btn active"> <i class="material-icons">radio_button_unchecked</i> </button>
+                <button type="button" name="button" onclick="sliderCurrent(2)" class="img-btn"> <i class="material-icons">radio_button_unchecked</i> </button>
+                <button type="button" name="button" onclick="sliderCurrent(3)" class="img-btn"> <i class="material-icons">radio_button_unchecked</i> </button>
+                <button type="button" name="button" onclick="sliderPlus(1)">> <i class="material-icons">arrow_forward_ios</i> </button>
+              </nav>
+            </div>
+            <article>
+              <header><h3>welcome to hawaii shark tours</h3></header>
+              <hr/>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <hr/>
+              <a href="#"><span>reserve</br>now!</span></a>
+            </article>
+          </section>
+        </div>
+        <!-- =##= -->
+        <footer>
+          <ul>
+            <li class="footer-left">
+              <header>
+                shark cage tours
+              </header>
+            </br>
+            <a href="#">phone 1</a></br>
+            <a href="#">phone 2</a>
+            </p>
+            </li>
+            <li class="footer-center">
+              <header>
+                follow us!
+              </header></br>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </li>
+            <li class="footer-right">
+              <a href="#">privacy policy</a></br>
+              <a href="#">site map</a></br>
+              <a href="#">FAQ</a></br>
+              <a href="#">terms and conditions</a></br>
+            </li>
+          </ul>
+        </footer>
+      <!-- ========= -->
+    <script type="text/javascript" src="gallery.js"></script>
+    <script type="text/javascript" src="toggle.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
